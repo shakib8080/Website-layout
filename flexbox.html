@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .contaier {
+        height: 500px;
+        display: flex;
+        /* justify-content: ; */
+        border: 3px dotted red;
+        align-items: stretch;
+      }
+      .box {
+        width: 150px;
+        /* height: 150px; */
+        border: 2px dashed rgb(221, 221, 170);
+        font-size: 3em;
+      }
+      #box-1 {
+        order: 2;
+        width: 400px;
+      }
+      #box-2 {
+        flex-grow: 1;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>i am flexible right now</h1>
+    <div class="contaier">
+      <div id="box-1" class="box">box-1</div>
+      <div id="box-2" class="box">box-2</div>
+    </div>
+  </body>
+</html>

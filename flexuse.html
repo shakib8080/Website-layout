@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexuse</title>
+    <script
+      src="https://kit.fontawesome.com/5b0f2192ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .loging-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .loging-form input,
+      button {
+        font-size: 1.3em;
+        border: 2px solid gray;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+      .loging-form :hover {
+        color: blue;
+      }
+      .loging-form button {
+        background-color: chocolate;
+        border-radius: 5px;
+        color: aliceblue;
+        border: 0px;
+        font-weight: 700;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+        font-size: 1.5em;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      .loging-form h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <a href="">Home</a>
+          <a href="">products</a>
+          <a href="">order</a>
+          <a href="">about us</a>
+        </span>
+        <span>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+      </nav>
+    </header>
+    <section class="container">
+      <form action="" class="loging-form">
+        <h1>loging</h1>
+        <input type="email" name="email" placeholder="enter your email" id="" />
+        <input type="email" name="name" placeholder="enter your name" id="" />
+        <button type="submit">loging</button>
+      </form>
+    </section>
+  </body>
+</html>
